@@ -58,7 +58,7 @@ nav ul li a:hover {
 }
 .content{
   max-width: 107rem;
-  margin: 0 auto;
+  margin: 10rem auto;
   padding: 0 4rem;
 }
 .hero-main {
@@ -165,16 +165,16 @@ nav ul li a:hover {
 .hero-skills p {
   margin-right: 7rem;
   padding-right: 2rem;
-  border-right: 2px solid rgba(45, 46, 50, 0.5);
+  border-right: 2px solid var(--secondary-text);
   font-family: "Mulish", sans-serif;
   font-weight: 600;
-  color: var(--light-neutral);
+  color: var(--primary-text));
 }
 @media (max-width: 900px) {
   .hero-skills p {
     margin-right: 0;
     margin-bottom: 3rem;
-    border-bottom: 2px solid rgba(45, 46, 50, 0.5);
+    border-bottom: 2px solid var(--light-neutral);
     border-right: none;
     padding-right: 0;
     padding-bottom: 1rem;
