@@ -270,24 +270,6 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
-.img-side {
-  background-image: url("static/media/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-size: 35rem;
-  width: 35rem;
-  height: 25rem;
-  border-radius: 1rem;
-  position: relative;
-  overflow: visible;
-}
-
-#working-emoji {
-  position: absolute;
-  bottom: 50%;
-  right: 50%;
-  transform: translate(50%, 50%);
-  width: 5rem;
-}
 
 .img-side {
   background-image: url("static/media/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg");
