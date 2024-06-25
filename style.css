@@ -129,7 +129,7 @@ nav ul li a:hover {
 }
 
 .hero-image {
-  background-image: url("/static/media/640x800_75_989f574a-ba83-470a-82bd-c4a14b22522f.webp");
+  background-image: url("static/media/640x800_75_989f574a-ba83-470a-82bd-c4a14b22522f.webp");
   background-position: 50%;
   background-size: 35rem;
   background-repeat: no-repeat;
@@ -271,7 +271,7 @@ nav ul li a:hover {
 }
 
 .img-side {
-  background-image: url("/static/media/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg");
+  background-image: url("static/media/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 35rem;
   width: 35rem;
@@ -290,7 +290,7 @@ nav ul li a:hover {
 }
 
 .img-side {
-  background-image: url("/static/media/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg");
+  background-image: url("static/media/radowan-nakif-rehan-cYyqhdbJ9TI-unsplash.jpg");
   background-repeat: no-repeat;
   background-size: 35rem;
   width: 35rem;
