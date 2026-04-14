@@ -23,10 +23,7 @@ import "./Hero.css";
 // We define this OUTSIDE the component.
 // If it were inside, React would re-create this array on every single render.
 // Since it never changes, it belongs outside.
-const TECH_STACK = [
-    "Java 21", "Spring Boot", "Spring Security",
-    "PostgreSQL", "Redis", "JWT", "OAuth2", "REST API",
-];
+
 
 // ─── 3. THE COMPONENT ────────────────────────────────────────────────────────
 const Hero = () => {
@@ -156,16 +153,6 @@ const Hero = () => {
           value as the key is fine here because the list never changes.
           In dynamic lists (from an API), use a unique ID instead.
         */}
-                <div className="hero__stack">
-                    <span className="hero__stack-label">// Core stack</span>
-                    <div className="hero__stack-items">
-                        {TECH_STACK.map((tech) => (
-                            <span key={tech} className="hero__stack-tag">
-                                {tech}
-                            </span>
-                        ))}
-                    </div>
-                </div>
             </div>
 
             {/* ── RIGHT COLUMN — AVATAR ── */}
