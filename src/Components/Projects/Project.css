@@ -1,0 +1,130 @@
+.projects__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+    color: aliceblue;
+}
+
+.project__card {
+    padding: 1.2rem;;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    transition: ;
+}
+
+/* 6. Card Hover State */
+.project__card:hover {
+  background-color: var(--bg2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* 7. The sliding green left border (Initial State) */
+.project__card {
+  position: relative; 
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.project__card::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+/* 8. Border Hover State */
+.project__card:hover::before {
+  background: var(--accent);
+}
+
+/* 9. Project ID */
+.project__id {
+  font-family: 'JetBrains Mono', monospace; /* or any mono font */
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4); /* Dimmed color */
+}
+
+/* 10. Project Title */
+.project__title {
+  font-size: 19px;
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+
+/* 11. Language Tag */
+.project__lang {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: var(--amber);
+}
+
+/* 12. Description */
+.project__desc {
+  color: var(--muted); /* or a grey tone */
+  font-weight: 300;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+.project__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project__tag {
+  border: 1px solid var(--border-color);
+  font-family: monospace;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+
+.project__features {
+    color: var(--muted);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0;
+}
+
+.project__feature {
+  font-size: 0.9rem;
+  color: var(--muted);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  list-style: none;
+}
+
+.project__feature::before {
+  content: '›';
+  color: var(--accent);
+  font-weight: bold;
+}
+
+/* 17. GitHub Button (reusing your btn pattern) */
+.project__github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  /* Match your .about__btn styles here */
+}
+
+/* 18. Responsive Tweaks */
+@media (max-width: 768px) {
+  .project__card {
+    padding: 1.25rem; /* Smaller padding for mobile */
+  }
+}

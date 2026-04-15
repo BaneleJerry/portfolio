@@ -14,11 +14,11 @@ const otherStack = [
 const About = () => {
 
     return (
-        <section className="about" id="about">
-            <p className="about__section-label">01 - About Me</p>
+        <section className="section" id="about">
+            <p className="section__label">01 - About Me</p>
             <div className="grid">
                 <div className="grid_left">
-                    <h2 className="about__heading">Backend-first.
+                    <h2 className="section__heading">Backend-first.
                         <em> Full-stack capable.</em></h2>
                     <p className="about__paragraph">
                         Graduate Java Developer with hands-on experience building production-grade backend systems. Comfortable across the full SDLC — from designing relational schemas and RESTful APIs to implementing business logic and maintaining existing systems.
@@ -28,7 +28,7 @@ const About = () => {
                         Eager to contribute to a structured engineering team, absorb best practices, and grow into a strong Java engineer.
                     </p>
                     <a href="https://www.linkedin.com/in/banele-thabede"
-                        className="about__btn"
+                        className="btn"
                         target="_blank"
                         rel="noopener noreferrer">
                         LinkedIn↗
@@ -40,7 +40,7 @@ const About = () => {
                         <span className="about__stack-label">// Core stack</span>
                         <div className="about__stack-items">
                             {TECH_STACK.map((tech) => (
-                                <span key={tech} className="about__stack-tag">
+                                <span key={tech} className="tag">
                                     {tech}
                                 </span>
                             ))}
@@ -51,7 +51,7 @@ const About = () => {
                         <span className="about__stack-label">// Also proficient </span>
                         <div className="about__stack-items">
                             {otherStack.map((tech) => (
-                                <span key={tech} className="about__stack-tag">
+                                <span key={tech} className="tag">
                                     {tech}
                                 </span>
                             ))}

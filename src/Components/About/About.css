@@ -1,34 +1,8 @@
-.about{
-    padding: 140px 48px 40px;
-    max-width: 1080px;
-    margin: 0 auto;
-    border-top: 1px solid var(--border);
-}
-
-.about__section-label {
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--accent);
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
 .grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     margin-top: 20px;
-}
-
-.about__heading {
-    /* font-size, font-weight, margin-bottom, letter-spacing */
-    font-family: var(--sans);
-    font-size: clamp(24px, 5vw, 32px);
-    font-weight: 300;
-    line-height: 1.06;
-    letter-spacing: -0.02em;
-    margin-bottom: 20px;
-    color: var(--text);
 }
 
 .about__heading em {
@@ -42,30 +16,6 @@
     line-height: 1.5;
     color: var(--muted);
 }
-
-.about__btn {
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 11px 22px;
-  border: 1px solid var(--border2);
-  background: transparent;
-  color: var(--text);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: border-color 0.2s, color 0.2s;
-  cursor: pointer;
-}
-
-.about__btn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-
 
 /* Tech Stack */
 .about__stack {
@@ -86,24 +36,6 @@
     flex-wrap: wrap;
     gap: 10px;
 }
-
-.about__stack-tag {
-    font-family: var(--mono);
-    font-size: 10px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 8px 16px;
-    border: 1px solid var(--border2);
-    background: transparent;
-    color: var(--text);
-    transition: border-color 0.2s, color 0.2s;
-}
-
-.about__stack-tag:hover {
-    border-color: var(--accent);
-    color: var(--accent);
-}
-
 
 @media (max-width:768px) {
     .grid {

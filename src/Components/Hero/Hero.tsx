@@ -127,17 +127,17 @@ const Hero = () => {
           rel="noopener noreferrer" → security best practice with _blank
         */}
                 <div className="hero__actions">
-                    <a href="#projects" className="hero__btn hero__btn--primary">
+                    <a href="#projects" className="btn hero__btn--primary">
                         View Projects
                     </a>
-                    <a href="#contact" className="hero__btn">
+                    <a href="#contact" className="btn">
                         Contact Me
                     </a>
                     <a
                         href="https://github.com/BaneleJerry"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hero__btn"
+                        className="btn"
                     >
                         GitHub ↗
                     </a>

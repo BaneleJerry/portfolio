@@ -30,3 +30,77 @@ code {
   font-family:
     source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+
+/* Shared Styles */
+.section {
+    padding: 80px 48px;
+    max-width: 1080px;
+    margin: 0 auto;
+    border-top: 1px solid var(--border);
+}
+
+.section__label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--accent);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+
+
+.section__heading {
+   font-family: var(--sans);
+    font-size: clamp(24px, 5vw, 32px);
+    font-weight: 300;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    color: var(--text);
+
+}
+
+.section__heading em {
+    font-style: normal;
+    color: var(--accent);
+}
+
+.btn {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 11px 22px;
+    border: 1px solid var(--border2);
+    background: transparent;
+    color: var(--text);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: border-color 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+.tag {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border: 1px solid var(--border2);
+    background: transparent;
+    color: var(--text);
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.tag:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
