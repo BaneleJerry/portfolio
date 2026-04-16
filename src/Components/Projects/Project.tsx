@@ -120,7 +120,7 @@ const Projects = () => {
                             ))}
                         </div>
 
-                        <ul className="project__feature">
+                        <ul className="project__features">
                             {project.features.map((feature) => (
                                 <li key={feature} className="project__feature">
                                     {feature}
