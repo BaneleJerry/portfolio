@@ -1,3 +1,5 @@
+import "./Experience.css"
+
 type Job = {
     id: number;
     role: string;
@@ -66,6 +68,8 @@ const Experience = () => {
     return (
         <section className="section" id="experience">
             <p className="section__label">03 - experience</p>
+            {/* Experince Part */}
+
             <h2 className="section__heading">Where I've <em>worked.</em></h2>
             <div className="experience__list">
                 {jobs.map((job) => (
@@ -78,7 +82,7 @@ const Experience = () => {
                             <p className="experience__company">{job.company}</p>
                             <ul className="experience__bullets">
                                 {job.bullets.map((bullet) => (
-                                    <li key={bullet} className="exprience__bullet">{bullet}</li>
+                                    <li key={bullet} className="experience__bullet">{bullet}</li>
                                 ))}
                             </ul>
                         </div>
@@ -86,6 +90,17 @@ const Experience = () => {
                 ))}
             </div>
 
+            {/* Education part */}
+            <h2 className="section__heading" style={{marginTop: "60px"}}>Where I've <em>studied</em>.</h2>
+            <div className="education__grid">
+                {education.map((edu) =>(
+                    <div className="education__card" key={edu.id}>
+                        <p className="education__school">{edu.school}</p>
+                        <h3 className="education__degree">{edu.degree}</h3>
+                        <p className="education__year">{edu.year}</p>
+                    </div>
+                ))}
+            </div>
         </section>
     )
 }
