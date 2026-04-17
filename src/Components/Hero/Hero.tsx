@@ -18,6 +18,7 @@
 // useEffect → lets us run code AFTER the component renders (side effects)
 import { useState, useEffect } from "react";
 import "./Hero.css";
+import projectImage from "../../assets/640x800_75_989f574a-ba83-470a-82bd-c4a14b22522f.webp";
 
 // ─── 2. STATIC DATA ──────────────────────────────────────────────────────────
 // We define this OUTSIDE the component.
@@ -156,26 +157,20 @@ const Hero = () => {
             </div>
 
             {/* ── RIGHT COLUMN — AVATAR ── */}
-            {/*
-        The avatar frame is purely decorative CSS — corner brackets,
-        top accent line, and the bracket corners are all done with
-        pseudo-elements (::before / ::after) and absolute positioning.
 
-        Replace the .hero__avatar-placeholder div with an <img> tag
-        once you have your photo:
-
-        <img
-          src="/assets/your-photo.webp"
-          alt="Banele Thabede"
-          className="hero__avatar-img"
-        />
-      */}
-            <div className="hero__avatar-wrap">
+            {/* <div className="hero__avatar-wrap">
                 <div className="hero__avatar-frame">
-                    <div className="hero__avatar-placeholder">
-                        <span className="hero__avatar-initials">BT</span>
-                        <span className="hero__avatar-hint">// your photo here</span>
-                    </div>
+                    <img
+                        src={projectImage}
+                        alt="Banele Thabede"
+                        className="hero__avatar-img"
+                    />
+                </div>
+            </div> */}
+
+            <div className="hero__avatar-frame">
+                <div className="hero__avatar-placeholder">
+                    <span className="hero__avatar-initials">BT</span>
                 </div>
             </div>
 

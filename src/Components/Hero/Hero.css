@@ -366,13 +366,12 @@
 
 /* Once you have your photo, use this class on the <img> */
 .hero__avatar-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;       /* fills the frame without stretching */
-  object-position: top;    /* anchors to the top so face stays visible */
-  display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%; /* moves down into the face */
+    display: block;
 }
-
 
 /* ─── RESPONSIVE ─────────────────────────────────────────────────────────────
 
