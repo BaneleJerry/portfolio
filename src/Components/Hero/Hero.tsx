@@ -18,7 +18,7 @@
 // useEffect → lets us run code AFTER the component renders (side effects)
 import { useState, useEffect } from "react";
 import "./Hero.css";
-import projectImage from "../../assets/640x800_75_989f574a-ba83-470a-82bd-c4a14b22522f.webp";
+// import projectImage from "../../assets/640x800_75_989f574a-ba83-470a-82bd-c4a14b22522f.webp";
 
 // ─── 2. STATIC DATA ──────────────────────────────────────────────────────────
 // We define this OUTSIDE the component.
