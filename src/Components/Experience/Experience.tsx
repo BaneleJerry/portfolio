@@ -67,7 +67,7 @@ const education: Education[] = [
 const Experience = () => {
     return (
         <section className="section" id="experience">
-            <p className="section__label">03 - experience</p>
+            <p className="section__label">03 <em>—</em> experience</p>
             {/* Experince Part */}
 
             <h2 className="section__heading">Where I've <em>worked.</em></h2>

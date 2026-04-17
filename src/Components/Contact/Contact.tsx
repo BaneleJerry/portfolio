@@ -16,7 +16,7 @@ const socialLinks: socialLink[] = [
 const Contact = () => {
     return (
         <section className="section" id="contact">
-            <p className="section__label">05 - contact</p>
+            <p className="section__label">05 <em>—</em> contact</p>
             <div className="contact__grid">
                 <div className="grid__left">
                     <h2 className="section__heading">Let's <em>connect</em></h2>

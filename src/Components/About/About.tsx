@@ -15,7 +15,7 @@ const About = () => {
 
     return (
         <section className="section" id="about">
-            <p className="section__label">01 - About Me</p>
+            <p className="section__label">01 <em>—</em> About Me</p>
             <div className="grid">
                 <div className="grid_left">
                     <h2 className="section__heading">Backend-first.

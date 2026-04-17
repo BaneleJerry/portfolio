@@ -102,7 +102,7 @@ const ProjectsArray: ProjectObjet[] = [
 const Projects = () => {
     return (
         <section className="section" id="projects">
-            <p className="section__label">02 - Projects</p>
+            <p className="section__label">02 <em>—</em> Projects</p>
             <h2 className="section__heading">Things i've built</h2>
             <div className="projects__grid">
                 {ProjectsArray.map((project) => (
