@@ -64,6 +64,31 @@ const education: Education[] = [
 
 const Experience = () => {
     return (
-        <section className="section" id="experience"></section>
+        <section className="section" id="experience">
+            <p className="section__label">03 - experience</p>
+            <h2 className="section__heading">Where I've <em>worked.</em></h2>
+            <div className="experience__list">
+                {jobs.map((job) => (
+                    <div key={job.id} className="experience__item">
+                        <div className="experience__date">
+                            {job.startDate} - {job.endDate ?? "Present"}
+                        </div>
+                        <div className="experience__content">
+                            <h3 className="experience__role">{job.role}</h3>
+                            <p className="experience__company">{job.company}</p>
+                            <ul className="experience__bullets">
+                                {job.bullets.map((bullet) => (
+                                    <li key={bullet} className="exprience__bullet">{bullet}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+        </section>
     )
 }
+
+
+export default Experience;

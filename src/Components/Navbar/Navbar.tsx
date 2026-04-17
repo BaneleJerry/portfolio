@@ -21,7 +21,7 @@ const Navbar = () => {
         ([entry]) => {
           if (entry.isIntersecting) setActiveSection(id);
         },
-        { threshold: 0.3 },
+        { threshold: 0.01 },
       );
       obs.observe(el);
       return obs;
@@ -29,7 +29,7 @@ const Navbar = () => {
     return () => observers.forEach((o) => o && o.disconnect());
   }, []);
 
-  const handleNavClick = (e, id) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
     setMenuOpen(false);
     const el = document.getElementById(id);
